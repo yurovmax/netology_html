@@ -1,0 +1,126 @@
+html {
+  font-family: helvetica, sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+  padding: 30px 40px;
+}
+
+.notice {
+  font-style: italic;
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+
+.red {
+  background: #e65c5b;
+}
+
+.green {
+  background: #98bd5f;
+}
+
+.blue {
+  background: #055590;
+}
+
+img {
+  display: block;
+  border: 1px solid #cccccc;
+}
+
+figure {
+  margin: 20px 0;
+}
+
+.ex1 {
+  margin-bottom: 100px;
+}
+
+.ex1 .cols {
+  margin-bottom: 50px;
+}
+
+.ex1 .cols > div {
+  min-height: 120px;
+  text-align: center;
+  padding: 20px 10px;
+  color: #ffffff;
+}
+
+.cols > div h3 {
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+.cols > div p {
+  font-size: 16px;
+}
+
+/* Ваше решение задания №1 */
+
+.ex1 .variant1 > div {
+	display: block;
+	box-sizing: border-box;
+	margin: 0;
+	width: 33.33%;
+	float: left;
+	border: 10px solid grey;
+}
+
+.ex1 .variant1::after {
+	display: block;
+	width: 100%;
+	content: "";
+	clear: both;
+}
+
+.ex1 .variant2 {
+	display: flex;
+}
+
+.ex1 .variant2 > div {
+	flex: 1 1 0;
+	box-sizing: border-box;
+	border: 10px solid grey;
+}
+
+.ex2 {
+  margin-bottom: 100px;
+}
+.ex2 .container {
+  display: block;
+  border: 3px solid #000000;
+}
+
+.ex2 .red {
+  position: relative;
+  height: 150px;
+}
+
+.ex2 .green {
+  position: relative;
+  height: 50px;
+}
+
+.ex2 .overlay {
+  width: 50%;
+  height: 200px;
+}
+
+/* Ваше решение задания №2 */
+
+.ex2 {
+	position: relative;
+}
+
+.ex2 .overlay {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+}

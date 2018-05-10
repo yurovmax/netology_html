@@ -1,0 +1,201 @@
+html {
+  font-family: helvetica, sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+  padding: 30px 40px;
+}
+
+.notice {
+  font-style: italic;
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+
+.ex1 {
+  margin-bottom: 50px;
+  font-size: 1.2em;
+}
+
+.ex1 header {
+  font-size: 1.5em;
+}
+
+.ex1 header h1 {
+  font-size: 4rem;
+}
+
+.ex header span {
+  font-size: 2em;
+}
+.ex header .marked {
+  font-size: 15px;
+}
+
+.ex1 article {
+  font-size: 20px;
+}
+
+.ex1 article strong {
+  font-size: 66.667%;
+}
+
+.ex1 article p {
+  font-size: 125%;
+}
+
+.ex1 article > p {
+  font-size: 80%;
+}
+.ex1 article .marked {
+  font-size: 250%;
+}
+
+.ex1 article blockquote {
+  font-size: 0.5em;
+}
+
+.ex1 .footer {
+  font-size: 20px;
+}
+
+.ex1 footer {
+  font-size: 16px;
+}
+
+.ex1 footer blockquote {
+  font-size: 1.5em;
+}
+
+.ex1 footer p {
+  font-size: 50%;
+}
+/* Ваше решение задания №1 */
+
+.ex1 header strong {
+    font-size: 0.5em;
+}
+
+.ex1 article strong {
+    font-size: 1.25em;
+}
+
+.ex1 blockquote strong {
+    font-size: 1.6em;
+}
+
+.ex1 .marked strong {
+    font-size: 0.8em;
+}
+
+.ex1 footer strong {
+    font-size: 2.5em;
+}
+
+.ex2 {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+/* Ваше решение задания №2 */
+
+.ex2 p * {
+  font: 400 normal 100% sans-serif;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+} 
+
+.ex3 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border: 2px solid #000;
+  margin-bottom: 50px;
+}
+
+/* Ваше решение задания №3 */
+
+.ex3 {
+    border: dotted;
+    background: lightgray url(https://tokyocycling.files.wordpress.com/2016/02/someiyoshino.jpg) no-repeat 100% 50%;
+}
+
+.ex4 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border: 4px solid #000000;
+  margin-bottom: 50px;
+}
+
+/* Ваше решение задания №4 */
+
+.ex4 {
+  box-sizing: border-box;
+  outline: 3px solid grey;
+  outline-offset: -12px;
+  background: lightgray url(https://tokyocycling.files.wordpress.com/2016/02/someiyoshino.jpg);
+  background-size: cover;
+}
+
+.ex5 {
+  font-size: 1.6em;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+/* Ваше решение задания №5 */
+
+.ex5 ul li {
+	position: relative;
+}
+
+.ex5 .list1 {
+	list-style: upper-roman;
+}
+
+.ex5 .list2 {
+	list-style: none;
+	counter-reset: my-counter;
+}
+
+.ex5 .list2 li::before {
+	position: absolute;
+	left: -1.3em;
+	content: counter(my-counter) ")";
+	counter-increment: my-counter;
+}
+
+.ex6 {
+  font-size: 1.6em;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+/* Ваше решение задания №6 */
+
+.ex6 ol li {
+	position: relative;
+}
+
+.ex6 .list1 li {
+	list-style: square;
+}
+
+.ex6 .list2 li {
+	list-style: none;
+}
+
+.ex6 .list2 li:before {
+	position: absolute;
+	left: -1em;
+	content: "*";
+}
